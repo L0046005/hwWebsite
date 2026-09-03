@@ -1,6 +1,5 @@
 *{
     font-family:'Times New Roman', Times, serif;
-
 }
 
 body {
@@ -10,6 +9,11 @@ body {
 
 section {
     color: burlywood;
+}
+
+img{
+    width: 200px;
+    height: 200px;
 }
 
 /* navbar */
@@ -44,26 +48,22 @@ li a:hover {
 /* quiz*/
 
 .quizButton{
-    width:200px;
-    height:200px;
+    width:50px;
+    height:50px;
 }
 
 .A{
     color: crimson;
-
 }
 
 .B{
     color:forestgreen;
-
 }
 
 .C{
     color:dodgerblue;
-
 }
 
 .D{
     color:lightyellow;
-
 }
