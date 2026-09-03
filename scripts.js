@@ -1,15 +1,15 @@
+//declare variables and listeners ect
 let currentQuestion = ""
 let outcome = ""
 let score = 0
-let answerKey = ["D","C","D","filler","B","A"]
-
-let buttons = document.querySelectorAll("button")
+let buttons = document.querySelectorAll(".quizButton")
 
 buttons.forEach(function(button) {
     button.addEventListener("click", function() {
         let parent = button.parentElement
         currentQuestion = Number(parent.className) - 1
         let className = button.className
+// the scoring logic for each question
         if (currentQuestion == 0) {
             if (answerKey[currentQuestion] == className) {
                 score++
@@ -54,13 +54,11 @@ buttons.forEach(function(button) {
                 score--
             }
         }
-
     })
-
 })
 
+// output your quizz results
 let resultsButton = document.querySelector(".results")
-
 resultsButton.addEventListener("click", function() {
     if (score == 6) {
         outcome = "cat"
