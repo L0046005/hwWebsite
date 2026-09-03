@@ -71,16 +71,21 @@ li a:hover {
 
 /* quiz*/
 
-.quizButton{
+..quizButton{
     width:150px;
     height:150px;
     border:none;
+    outline:none;
     border-radius:8px;
     font-size:28px;
     color:white;
     cursor:pointer;
 }
-
+div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 .A{
     background-color:#e74c3c;
 }
