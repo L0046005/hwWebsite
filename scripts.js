@@ -60,6 +60,7 @@ buttons.forEach(function(button) {
 })
 
 let resultsButton = document.querySelector(".results")
+
 resultsButton.addEventListener("click", function() {
     if (score == 6) {
         outcome = "cat"
@@ -68,8 +69,5 @@ resultsButton.addEventListener("click", function() {
     } else {
         outcome = "human"
     }
-    let ans = document.createElement("p")
-    ans.textContent = "You are most likely a " + outcome + "!!!"
-    document.body.appendChild(ans)
-
+    alert("You are most likely a " + outcome + "!!!")
 })
