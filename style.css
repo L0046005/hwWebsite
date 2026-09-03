@@ -1,5 +1,6 @@
 *{
     font-family:'Times New Roman', Times, serif;
+    centre
 }
 
 body {
@@ -14,6 +15,7 @@ section {
 img{
     width: 200px;
     height: 200px;
+    object-fit: cover;
 }
 
 /* navbar */
